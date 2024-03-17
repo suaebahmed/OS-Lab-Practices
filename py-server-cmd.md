@@ -1,3 +1,4 @@
+```
 scp user@ip:/home/porichoy/kubeconfig.txt . -P 6789
 
 => top
@@ -13,3 +14,4 @@ list of file with long list
 
 kubectl config view --row
 kubectl config view --minify
+```

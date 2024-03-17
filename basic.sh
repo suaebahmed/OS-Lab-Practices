@@ -1,3 +1,30 @@
+# Common error when writing shell script
+# assign value to variable without space between variable and value
+# correct: var=value
+
+
+# Variables
+printf "\n"
+echo "Variables"
+NAME="John"
+echo "My name is $NAME"
+
+# User input
+printf "\n"
+echo "User input"
+echo "Enter your name: "
+read NAME
+echo "My name is $NAME"
+
+# String - problem statement: concatenate two strings
+printf "\n"
+echo "String"
+s1="Hello world, "
+s2="I am learning Bash programming!!"
+
+echo $s1$s2
+
+
 # let <arithmetic expression>
 
 let a=5+4
@@ -120,3 +147,22 @@ echo "It’s there."
 else
 echo "It’s not there."
 fi
+
+# Looping
+# for loop
+printf "\n"
+echo "for loop"
+for i in 1 2 3 4 5
+do
+  echo "Welcome $i times"
+done
+
+# while loop
+printf "\n"
+echo "while loop"
+i=0
+while [ $i -le 5 ]
+do
+  echo "Welcome $i times"
+  i=$((i+1))
+done

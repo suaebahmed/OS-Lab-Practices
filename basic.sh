@@ -13,7 +13,7 @@ echo "My name is $NAME"
 printf "\n"
 echo "User input"
 echo "Enter your name: "
-read NAME
+read -p NAME # -p is used to prompt the user
 echo "My name is $NAME"
 
 # String - problem statement: concatenate two strings
@@ -161,7 +161,7 @@ done
 printf "\n"
 echo "while loop"
 i=0
-while [ $i -le 5 ]
+while (( i <= 10 ))
 do
   echo "Welcome $i times"
   i=$((i+1))
